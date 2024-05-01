@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Bebas Neue, sans-serif;
+}
+body {
+	min-height: 100vh;
+	background-image: url(images/eo-water-logo.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+nav{
+	background-color: rgb(255, 255, 255);
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+	align-items: center;
+	font-size: 20px;
+}
+nav li{
+	height: 50px; 
+}
+nav a {
+	width: 100%;
+	display: flex;
+	padding: 10px 25px;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+nav a:hover {
+	background-color: #f0f0f0;
+	transition: 0.5s;
+	text-transform: uppercase;
+}
+.logo img{
+	position: absolute;
+	height: auto;
+	width: 190px;
+	left: 0px;
+	margin: 0 0 0 10px;
+	padding: 0 0;
+}
+.sidebar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 250px;
+	z-index: 999;
+	background-color: rgb(255, 255, 255, 0.2);
+	backdrop-filter: blur(10px);
+	box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.sidebar li{
+	width:100%;
+}
+.sidebar a{
+	width:100%;
+}
+.menuButton{
+	display: none;
+}
+@media(max-width: 800px){
+	.onMobile{
+		display: none;
+	}
+	.menuButton{
+		display: block;
+	}
+}
+@media(max-width: 500px){
+	.sidebar{
+		width: 100%;
+	}
+}
+
+/*.promotion{
+	width:100%;
+	background-color:black;
+	height: 500px;
+}*/
+.products{
+	margin: 25px 0 0 50px;
+}
