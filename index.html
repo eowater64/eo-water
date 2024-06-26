@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kh">
  <head>
   <meta charset = "utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,56 +9,80 @@
  </head>
 
  <body>
-   <header>
-   <!-- Logo Image-->
-       <div class="logo">
-           <a href="#">
-                  <img src="images/logo.jpg" alt="EO WATER TEXT">
-           </a>
-       </div>   
-   <!--Header button-->
-       <nav>
-           <ul class="sidebar">
-               <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" /></svg></a></li>
-               <li><a href="#">HOME</a></li>
-               <li><a href="#">WATER PURIFIER</a></li>
-               <li><a href="#">DRINKING WATER</a></li>
-               <li><a href="#">CONTACT</a></li>
-           </ul>
-           <ul>
-               <li class="onMobile"><a href="#">HOME</a></li>
-               <li class="onMobile"><a href="#">WATER PURIFIER</a></li>
-               <li class="onMobile"><a href="#">DRINKING WATER</a></li>
-               <li class="onMobile"><a href="#">CONTACT</a></li>
-               <li class="menuButton" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg></a></li>
-           </ul>
-       </nav>
+     <header>
+         <!-- Logo Image-->
+         <div class="logo" id="logo">
+             <a href="#">
+                 <img src="images/logo.jpg" alt="EO WATER TEXT">
+             </a>
+         </div>
+         <!--Header button start-->
+         <nav>
+             <ul class="sidebar">
+                 <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" /></svg></a></li>
+                 <li><a href="#logo">ទំព័រដើម</a></li>
+                 <li><a href="#product">ផលិតផល</a></li>
+                 <li><a href="#contact">ទំនាក់ទំនង</a></li>
+             </ul>
+             <ul>
+                 <li class="onMobile"><a href="#logo">ទំព័រដើម</a></li>
+                 <li class="onMobile"><a href="#product">ផលិតផល</a></li>
+                 <li class="onMobile"><a href="#contact">ទំនាក់ទំនង</a></li>
+                 <li class="menuButton" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg></a></li>
+             </ul>
+         </nav>
 
-       <script>
-           function showSidebar() {
-               const sidebar = document.querySelector('.sidebar')
-               sidebar.style.display = 'flex'
-           }
-           function hideSidebar() {
-               const sidebar = document.querySelector('.sidebar')
-               sidebar.style.display = 'none'
-           }
-       </script>
-   </header>
-   <main>
-       <!--Promotion-->
-       <div class="promotion">
-           
-       </div>
-       <!--Products-->
-       <div class="products">
-           <h1>Products</h1>
-           
-       </div>
-       <!--Materials-->
-       <div class="materials">
+         <script>
+             function showSidebar() {
+                 const sidebar = document.querySelector('.sidebar')
+                 sidebar.style.right = '-10%'
+             }
+             function hideSidebar() {
+                 const sidebar = document.querySelector('.sidebar')
+                 sidebar.style.right = '-100%'
+             }
+         </script>
+         <!--Header button end-->
+     </header>
+     <!--sliding image​ start-->
+     <fieldset>
+         <div class="slide">
+             <div class="slider">
+                 <img src="images/1st-purifier.jpg" alt="Product" />
+                 <img src="images/2000L-water-purifier.jpg" alt="Product" />
+                 <img src="images/3000L-water-purifier.jpg" alt="Product" />
+                 <img src="images/5000l-water-purifier.jpg" alt="Product" />
+             </div>
+         </div>
+     </fieldset>
+     <!--sliding image​ end-->
+     <img src="images/cleaning-water.jpg" class="imgM" />
 
-       </div>
-   </main>
+     <h1 id="product" class="title">ផលិតផល</h1>
+     <p class="letter">ក្រុមហ៊ុនយើងខ្ញុំមានផលិតផលដូចជា៖</p>
+     <a href="#1st-purifier" class="block letter">ចម្រុះដំបូង, </a>
+     <a href="#2000L-water-purifier" class="block letter">ចម្រុះទឹកប្រើប្រាស់ ២០០០លីត្រ, </a>
+     <a href="#3000L-water-purifier" class="block letter">ចម្រុះទឹកប្រើប្រាស់ ៣០០០លីត្រ, </a>
+     <a href="#5000L-water-purifier" class="block letter">ចម្រុះទឹកប្រើប្រាស់ ៥០០០លីត្រ, </a>
+     <a href="#drinking-water" class="block letter">ចម្រុះទឹកផឹក</a>
+
+     <h2 id="1st-purifier" class="letter">ចម្រុះដំបូង</h2>
+     <h3 id="2000L-water-purifier" class="letter">ចម្រុះទឹកប្រើប្រាស់ ២០០០លីត្រ</h3>
+     <h4 id="3000L-water-purifier" class="letter">ចម្រុះទឹកប្រើប្រាស់ ៣០០០លីត្រ</h4>
+     <h5 id="5000L-water-purifier" class="letter">ចម្រុះទឹកប្រើប្រាស់ ៥០០០លីត្រ</h5>
+     <h6 id="drinking-water" class="letter">ចម្រុះទឹកផឹក</h6>
+     
+     <img src="images/price.jpg" alt="price" class="imgM" />
+
+     <h7 id="contact" class="title">ទំនាក់ទំនង</h7>
+     <dav>
+         <a href="https://t.me/eo_water_purifier">
+             <img src="images/telegram-icon.jpg" alt="Telegram" class="icon" />Telegram
+         </a>
+         <a href="https://www.facebook.com/eo.water.purifier.2023">
+             <img src="images/facebook-icon.webp" alt="Facebook" class="icon" />Facebook
+         </a>
+         <a><img src="images/call-icon.png" alt="Phone Number" class="icon" />077600700 / 070884188</a>
+     </dav>
  </body>
 </html> 
